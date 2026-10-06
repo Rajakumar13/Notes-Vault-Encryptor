@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAOgUlEQVR42u2d2Y9cxRXGf3X7dvcsnsWe8cZm4wWwDCQsAiQgJIoUCUSCQoKQQh5QIuUlUvKXJFLykieSKEJKSJQIQuABxBIIggSMzeYVb9jjZTybZ8azdPe9lYdTd+7tbaa73cu97TrSFbh7urq66qtzvjrn1Cn17GtaY+WaFccOgQWAFQsAKxYAViwArFgAWLEAsGIBYMUCwIoFgJVrQNxEoVWVv6aBep3ZClCV2tLS3lX3qYF2LADWEK1h0SsZWA2OA5k69VjOB883SIhIxqk8odXE17DklSMy5UDasQBoiigz0H1peGAUsimz6oGUgslF+GKqdi2ggdtHYEs/eDrEgK/hiwmYWpZ29Rp98jRs6JG2Am0S9GlsHo5NV9YyFgANiKdhfQaeuRUGMsXvHZyAw1OQN4RG16BJvnU93L+1fDX/6iMYX5IVvBYCCh5c1wc/3Vv+9r/PSp/SKv6mIDkmACjocPVrLerap75BDjTKCndQ8lrBr3+ytAGno0r6lKAAe6JIoCox26qJ7agG22tWnywAqgxiLZNT9wSqyi+lamynnj6VagwLgLXmRYkqDdS0Y1S/p1dXwwUtE+jXoLf1KlyjoCGlVyeVqoY+FTQ4OuyPMgRRqXhtE2MBgGBQcr78tycF/elwFRU0rEtX9lq5CgbTZsBrIYEIOav0em8ahjOyHVwVAApyjvSxkqQdaceNkMCChoUC5D1wHXmIARBUp3MClQoHZccgfH0Utg3CYEZW9MqkpWBTv6yiqCwWYGKhdv2qgZG+8snTGi4twFKhNlOigZ40bOorf28+B1OLxe0sm/YPT8Gnk3BpSQDidHin0FEAKGDJh92D8N2bYe8o9CaKljYmF6/AO2Pw+hlxJLkdBIHbycnP+fDwVvjRrTCUDVeW1pVXYTXHSt0QVpXbX+27K/2tWqWd0hnVkd+wuR+eugV2DcOfDsPEopiNToDA6dTk5314aAv8ZK9Mvq+LB6kW5t6MXUajX6Ma+M4AMIEv465N8LPbYUNWOIK6FgAQrPxdQ/DMbeLa9Ql98Co6WNFnDR5Rz7PmJNX61NtOBYfUng3w9O7OmYG2mwAf6HPhiR0wkA29ZyvgKMD4onjmoio+kxL/fcqJqGBgKQ8XF+rbZ4/2wrpM2EbQr/F5QwJriAX4WnYNm/uKYwEKmMsJMS0F20AGRnrD7wwI4H1b4ZMJeO+C/M52srK2AkApyHlwxwa4Y9QMsgoH7vAkvHQCzi+IiYiaixv64Rd3iblYsdUKTs3C7z6DvK49FvDsHhl0NGizMj0P/noUPp9eexJWfscI/PxrEbVu+nTgEjx/uNiuKwP8uzfC93ZKcCtAjevAIzfA/gnRjqprNYAGpeH2DbKSg0FWCs7Nw+8Pwpl5mYBSvnClUHlyCxrm87UDwDfOnkqyUIC5PGT9tQGwXJC/ryR5X/pUSuxm8/DSSXnt6VuN5jOzvW1Qgktfzhqz2CYt0FYO4CEOnVvWl7/38TicvSIrI6UqP1V/hKr+mUqPqgAUXW87TvXBC7x+pU9aCbg/uCg+gahnsj8tu4J2B5LaBgAF+D6M9MBoH8WMD5haKtmOlTzBwOiSSVvOhy5Zv8pndeRznobppWK1rZEVPZcvZulVH9NYzi+PIq72OT+iPWZz5dvY69eZXATdhQAIbH2vWzmDZzUffkrBTE5WTQCkgFUfmoZlr77kiw8uiqfOMZ44BfzvomggtxY7YlzQY/Nwdra8T2NzIb+pR3pT4v3U3agBVlavqv8zjgNX8vDyCZgxCRsK2D8uk+nWOGoascun5uAPB+H4DFxegje/Etvs68rmoVqfZvPwz5Mwtxz26cML8P4FAVIjuYrtdgYkwvGqTZ7d/gn47QF4YIuYjHfOC9mqZw8dpG3tn4ATl2EgDecXi7dltfYp7cC+SzB/AO7fIlu/d84LYXVVMhJDE+V5Tztw9LI82myfGh3oTArmCzBrJkvRWDtpBw7PyHO1fbIAqGH1ZpyImryKcKrWhp2XkMSG+pSKeIESlBKeOACs8AjdxLaaZKKa2mC3kkArFgBWrAmIh6gWmgQLgBZOmr7aSTeeNk8XB2qcIFTcBBKn0OiEJIi7yVqxGrXyf/Wv9oKWqF/akcTTTCo8FLLsiYsWJe+rq3DJ6gSdDkjUyaBAB6g6BjiIJgLcuA72boBtA7DR5AQoJAdgagnOzsPhaTh2WQCRdhrTOvIZTRKOiSTMBET3W7UNbt6HG/rgkevhgetguKfy3+0A7kW0wOcT4h4+OAOeqt8/n5TJTygJVGtORjTS9/AWeGInbF4XQqeaalcKsi7cs0UylN/8Cv51SjyG9Xj31IoOsBqgyRxArUkGo5P/+DbJvsm4JhRrEFA1m9dkCKGhx4XHdsCmXnj+CEzlageBShAPSBQHUFX+VSq+hkdvhCd3S9Qu+tdB2Hg+B7PLEsbtz4hpWMnti0z0veYY+XOHpEBF0g5/dqEJqK5ag4zje0bh+xUmH+DkDHx4EY7OSGKINsUntg/A3Zvgzo0SXl5x7WsBwfgivPBlcWr36oTVAqCNLpzwDOHmHnhqt9jyIEkTs9V74zS8ckrUOYTZyDoHJ+fg/YvwwGb4wW7Y0Bs2rDV8+yap+vHhRCT40wXiJGna9RrUSmt46Dq4YTAs/qCRah4vHYM/H4OZvCRdZkzY1jW5elnDE94+B899LhlDUcm68Oh2GHClvpBalaJqC4DW+AEqa4Bg9W/thQevK3/vvTF45Svj5FGRCiEU5/kpxEH0yST87aikfq94D4Ed6yWl3VuFguiGS01YANS8CdQVEOD54uTZ1F/s4j0/D6+erq1+QACGdAr+Ow77LhRrF9eB+7ZAdpV0L1XUkgVAy7aCpao/7cBt68N/B/LeOUn2TDs1FI8gPPSZ8+HNM3AlV1ztY+cwbOypfpYv9FgqC4BWcIBKr3sahrNw01CxU2chDwcn6/frB6v91DyculxsggazsLVPto+VS81oqwFaywFKfIHGpo/0SN2+qJybg7EFk6Fb78AoiRF8NVfch5Qjx7ur0QB9VSWnLABq5ACqbMWuzwpTj8rYFcnQdRqcCx8JEAUaJdAiG7KrayS7C2gjAQwmos8t1xQzy8XVQBuR2Vx50Yj+jAGVrkYklc0Kbo0ZqB4IVpHtHaY6l9eEWfBM8ohDeDzNUWsRVQ0JAUEiU8IqmYGg4FJ0o+A2wQw7yhwXi0z8aoWgdZWdigVAE8mgUqrIdqWUFInYdzFc9a4jR82DknCN8ICUIybgvxdCU5NJwdFpcxSsJKro69VBagHQJMl54Tm+QPZPwMcTldQxeIXGv+vLWfjNgcqqPl/yWpBKFu4GrAZoCWvdNSTn6f0YKVtfy5ZxoZCskHGiEkJyvubWIcUv7xImXqoFWlacd40c8sAn8MIRePk09LvJqRieHA1g9uGDWXkC21/3xNECUBgEDPeEW0aFPR3cgvFWeNoUY4iRByPQAF4CcwQSlhYuHMBx4gnQVKRcXFKwkChPoKOkUshivrkmvlkInVu2F0a0bnxNhO7kHPx6v7h+/XjNP6dNiTetLQdomRS0FIaKI8tOO40HniwA6rC1wZm+OGqppPHAZB4Pj+lAJzFROJEA8GIIgOCIuQVAG9Rsn1v/dbHtWP3z+Sgw7engpq+wvIYb++W2zqFse0uqriW+hn8cg3cvSMVP3waDmo8A35NLmnYOx7OL24bg7fPSV6XtNrDpGiAwAbFzBZsjaEEZelsgokU2VkXRoGPWubLptiag+eNsTgDFjW0HSSC+n7ztYHIAoCW96+ScXO2yPnv1Gb/NVAC+ho/G17511ALgKiQIBr14IqaD6TR2CMUCoB4eoKR8S9xoQFBMIuQqNim0JSRwtSJPHfUDlHFCSwJbRbZjH2q1GqBlA6vxUPh+52/droROFT2cYjVA81eVpxXrs/DYdrle3ovTMGt46wwcmmn/7Z/XhgZQUuf3pnXwnW3x7OLkInw6ZbKC7C6gdUQwbtlA0WpkgbZKSkqYk6TZd5Tm0hIs5OLlDVQmFWx8IYbcpFsAIHf+KcauwFtnTedVTB7g0KRUFws8gdYEtAgGCsXLp6TK594RqQPcycHWPpydg7fGYHq5/MJoC4BmT7+5uv31sxJ7T3XYFGht6gmq5E1+AjWAsbmm4KPWkiXU8UF0QjOFBUD7OEFcSEySywYn/tawa/Gmr2tzG2ilOwCg7JKNlTZz2vnrHGCxEN7iVQQMO/8se+33crrtRHfKgckledZlKMr0XJ81VbdU92oJpeTiikwKBtLFr4NUNi/osKR915FAR8kNXMenYdtg8bK/cxTeOAOXluJ36qeZPoMlD74xAhv7jMpX4d2Fxy6Ht5d25S4gCOR8NgXfvKn4/p3tQ/DsHvj7cdEQfhcCIK3gwa3ww1tEGwZVTVFwZk5qG6fbHEtoKwB8LZcxHJqCI1OwZ6Q4knbXZtg1DBNdCoCeFGztDwNZ0RS3d8dEO7Y7l6DtfgBHwVweXjwONw9Jgmc0328gK0+3s/1AGzpKbiZ577wpbdutJDBqB7MuHJyWuno/3mPUYeSSJ92tJDCy3fHNYjg5A385Ki5ttwOh5I54AoN6P2+clUF4crdU/gzMhOrGfWEkZTx4jkzBHw/C+cXOpZG5nVwNrgOvnYFzV+DxHXLnT6pbfZORwtKXl+Quo1dPw+V8Z3MI3Q4uCGHGjuwKTszCLcNwx6jc4jmYjWc9wIadPHmYWJTr6T+dhLH54qhmp6TjwSCN7PuXfdh3Sap+97vmds5uMQNaTNtiQfwAjgp9HZ2mO25MxgcH6DXXvS77MlDdxAWDGkK9bryIrhujRbIyKEktuFTLb4xbRrMb58Gy0ga/jB0CCwArFgBWLACsWABYsQCwYgFgxQLAigWAFQsAKxYAViwArFgAWLEAsGIBYMUCwErXiau78xCOlVoB4KatFrimAVDI+f+xw3Dtyv8BneWHi7mUC5wAAAAASUVORK5CYII=">
+<title>Notepad</title>
+<style>
+:root{--bg:#07090e;--glass:rgba(18,24,38,.72);--line:rgba(255,255,255,.07);--tx:#e6eaf2;--mut:#8590a6;--em:#10b981;--cy:#06b6d4;--go:#f59e0b;--cr:#f43f5e;--spring:cubic-bezier(.34,1.56,.64,1);--sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Segoe UI",Roboto,sans-serif;--mono:"JetBrains Mono","Fira Code",monospace}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{font-family:var(--sans);color:var(--tx);background:var(--bg);background-image:radial-gradient(at 0% 0%,rgba(16,185,129,.05),transparent 50%),radial-gradient(at 100% 100%,rgba(6,182,212,.05),transparent 50%);background-attachment:fixed;animation:drift 30s ease-in-out infinite alternate}
+@keyframes drift{to{background-position:30px 20px,-30px -20px}}
+.hide{display:none!important}
+.glass{background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 40px -15px rgba(0,0,0,.7),inset 0 1px 0 0 rgba(255,255,255,.08)}
+.center{min-height:100vh;display:grid;place-items:center;padding:20px}
+.card{width:100%;max-width:420px;padding:36px 30px;text-align:center}
+.card h1{font-size:22px;letter-spacing:-.02em;margin:14px 0 6px}
+.card p{color:var(--mut);font-size:14px;line-height:1.5;margin-bottom:20px}
+.logo{display:block;width:64px;height:64px;margin:0 auto;border-radius:16px;background:url(data:image/png;base64,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) center/cover no-repeat;animation:float 4s ease-in-out infinite;box-shadow:0 8px 28px -6px rgba(96,181,255,.5)}
+.logo.sm{width:32px;height:32px;margin:0;border-radius:7px;animation:none;box-shadow:none}
+.shield{width:56px;height:56px;color:var(--em);animation:float 4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(16,185,129,.45))}
+@keyframes float{50%{transform:translateY(-6px)}}
+input,textarea,button{font:inherit;color:inherit}
+.inp{width:100%;background:rgba(0,0,0,.35);border:1px solid var(--line);border-radius:10px;padding:11px 13px;outline:none;transition:border .2s,box-shadow .2s}
+.inp:focus{border-color:var(--cy);box-shadow:0 0 0 3px rgba(6,182,212,.15)}
+.inp.bad{border-color:var(--cr);animation:pulse 1s infinite}
+.inp.ok{border-color:var(--em);box-shadow:0 0 12px rgba(16,185,129,.3)}
+@keyframes pulse{50%{box-shadow:0 0 0 4px rgba(244,63,94,.25)}}
+.btn{border:1px solid var(--line);background:rgba(255,255,255,.05);padding:10px 16px;border-radius:10px;cursor:pointer;transition:transform .3s var(--spring),background .2s,box-shadow .2s;font-size:14px}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.09)}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible,.inp:focus-visible{outline:2px solid var(--cy)}
+.btn.pri{background:linear-gradient(135deg,#10b981,#059669);border-color:transparent;color:#03140d;font-weight:600;box-shadow:0 8px 24px -8px rgba(16,185,129,.6)}
+.btn.pri:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn.dng{color:var(--cr)}
+.pw{position:relative}
+.pw .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:none;border:0;cursor:pointer;color:var(--mut);padding:6px}
+.err{color:var(--cr);font-size:13px;min-height:18px;margin-top:8px}
+.top{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;background:rgba(7,9,14,.7);backdrop-filter:blur(16px)}
+.top h2{font-size:17px;font-weight:600;letter-spacing:-.01em;flex:1}
+.badge{font-size:12px;padding:4px 10px;border-radius:99px;color:var(--em);border:1px solid rgba(16,185,129,.35);background:rgba(16,185,129,.08);font-family:var(--mono)}
+.layout{display:grid;grid-template-columns:1fr 360px;gap:18px;padding:18px;max-width:1300px;margin:auto}
+.layout.collapsed{grid-template-columns:1fr}.layout.collapsed aside{display:none}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+.editor{padding:16px;display:flex;flex-direction:column;gap:12px;min-height:70vh}
+.editor textarea{flex:1;min-height:55vh;resize:none;background:transparent;border:0;outline:0;font:15px/1.7 var(--mono);color:var(--tx)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:var(--mut);padding:4px 10px;border:1px solid var(--line);border-radius:99px;font-family:var(--mono)}
+.chip svg{width:13px;height:13px}
+.chip.ok{color:var(--em);border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.08)}
+aside{display:flex;flex-direction:column;gap:16px}
+aside section{padding:16px}
+aside h3{font-size:13px;margin-bottom:10px;color:var(--mut);font-weight:600}
+.drop{border:1px dashed rgba(255,255,255,.2);border-radius:12px;padding:20px;text-align:center;color:var(--mut);font-size:13px;cursor:pointer;transition:.2s}
+.drop:hover,.drop.over{border-color:var(--em);color:var(--em);background:rgba(16,185,129,.05);animation:pulse2 1.4s infinite}
+@keyframes pulse2{50%{box-shadow:0 0 0 5px rgba(16,185,129,.1)}}
+.files{display:grid;gap:8px;margin-top:10px}
+.file{display:flex;gap:10px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.2);flex-wrap:wrap}
+.ext{font:600 10px var(--mono);padding:6px;border-radius:6px;background:rgba(6,182,212,.12);color:var(--cy);min-width:38px;text-align:center}
+.file .nm{flex:1;min-width:0;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file .sz{font:11px var(--mono);color:var(--mut)}
+.file button{background:none;border:0;color:var(--mut);cursor:pointer;font-size:12px}
+.file button:hover{color:var(--tx)}
+.file .pv{width:100%}.pv img{max-width:100%;border-radius:8px}.pv pre{font:11px var(--mono);white-space:pre-wrap;max-height:140px;overflow:auto;color:var(--mut)}
+.slug{display:flex;align-items:center;gap:6px;font:12px var(--mono);color:var(--cy)}
+.slug span{white-space:nowrap}
+.status{font-size:12px;margin-top:6px;min-height:16px}.status.ok{color:var(--em)}.status.bad{color:var(--cr)}
+.meter{height:6px;border-radius:9px;background:rgba(255,255,255,.07);margin:8px 0 6px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;border-radius:9px;transition:width .4s var(--spring),background .3s}
+.tier{font:12px var(--mono);color:var(--mut)}
+.field{margin-bottom:12px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);display:grid;place-items:center;z-index:20;padding:20px;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.modal .glass{width:100%;max-width:430px;padding:30px;text-align:center;animation:pop .45s var(--spring)}
+@keyframes pop{from{transform:scale(.9) translateY(14px);opacity:0}}
+.otp{display:flex;gap:8px;justify-content:center;margin:18px 0}
+.otp input{width:46px;height:56px;text-align:center;font:600 22px var(--mono);background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;outline:0}
+.otp input:focus{border-color:var(--go);box-shadow:0 0 0 3px rgba(245,158,11,.18)}
+.ring{width:84px;height:84px;margin:0 auto 6px;position:relative}
+.ring svg{transform:rotate(-90deg)}.ring circle{fill:none;stroke-width:5}
+.ring .bg{stroke:rgba(255,255,255,.07)}.ring .fg{stroke:var(--go);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+.ring b{position:absolute;inset:0;display:grid;place-items:center;font:14px var(--mono);color:var(--go)}
+.linkbox{font:12px var(--mono);color:var(--cy);background:rgba(0,0,0,.4);padding:10px;border-radius:10px;word-break:break-all;margin:14px 0;border:1px solid var(--line)}
+.row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+#toasts{position:fixed;right:16px;bottom:16px;display:grid;gap:8px;z-index:50}
+.toast{padding:11px 16px;border-radius:12px;font-size:13px;max-width:320px;animation:tin .5s var(--spring);border-left:3px solid var(--em)}
+.toast.err{border-left-color:var(--cr)}.toast.warn{border-left-color:var(--go)}
+.toast.out{animation:tout .3s forwards}
+@keyframes tin{from{transform:translateX(120%);opacity:0}}@keyframes tout{to{transform:translateX(120%);opacity:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="toasts"></div>
+
+<!-- EMPTY STATE -->
+<div id="vEmpty" class="center hide"><div class="glass card">
+<span class="logo" role="img" aria-label="Notepad logo"></span>
+<h1>No active vaults found</h1><p>Initialize your first workspace.</p>
+<div class="row"><button class="btn pri" id="btnNew">Create workspace</button><button class="btn" id="btnHave">I already have a domain</button></div></div></div>
+
+<!-- OPEN EXISTING DOMAIN -->
+<div id="vOpen" class="center hide"><div class="glass card">
+<span class="logo" role="img" aria-label="Notepad logo"></span>
+<h1>Open your note</h1><p>Enter your domain name to open it on this device.</p>
+<div class="field"><div class="slug"><span id="pref2"></span><input class="inp" id="openSlug" placeholder="your-domain or full link" autocomplete="off" spellcheck="false"></div></div>
+<button class="btn" id="btnImport" type="button" style="width:100%;margin-bottom:10px">Or open a .vault.json file</button><input type="file" id="importIn" accept=".json,application/json" hidden>
+<div class="tier" id="importSt" style="margin-bottom:10px"></div>
+<button class="btn pri" id="btnOpen" style="width:100%">Open vault</button>
+<div class="err" id="openErr" role="alert"></div>
+<button class="btn" id="btnOpenBack" style="margin-top:4px">Back</button></div></div>
+
+<!-- STUDIO -->
+<div id="vStudio" class="hide">
+<header class="top">
+<span class="logo sm" role="img" aria-label="Notepad logo"></span>
+<h2>Notepad</h2><span class="badge">256-Bit Encrypted</span>
+<button class="btn" id="btnDrawer">Panel</button>
+<button class="btn dng" id="btnFlush">Flush memory</button></header>
+<div class="layout" id="layout">
+<main class="glass editor">
+<textarea id="note" placeholder="Write your note in Markdown. Everything is encrypted on this device." spellcheck="false"></textarea>
+<div class="chips">
+<span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><b id="cW">0</b> words</span>
+<span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h14M12 4v16"/></svg><b id="cC">0</b> chars</span>
+<span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/></svg><b id="cS">0 B</b> total</span>
+</div></main>
+<aside>
+<section class="glass"><h3>Attached files</h3>
+<div class="drop" id="drop">Drop files here or click to browse<input type="file" id="fileIn" multiple hidden></div>
+<div class="files" id="files"></div></section>
+<section class="glass"><h3>Custom domain</h3>
+<div class="slug"><span id="pref"></span><input class="inp" id="slug" placeholder="q3-investor-brief" maxlength="40" autocomplete="off"></div>
+<div class="status" id="slugSt"></div></section>
+<section class="glass"><button class="btn pri" id="btnPub" style="width:100%">Publish</button>
+<div class="tier" style="margin-top:8px;line-height:1.5">Anyone who knows this domain name can open the note, so choose a long, unguessable name.</div></section>
+</aside></div></div>
+
+<!-- DONE MODAL -->
+<div class="modal hide" id="mDone"><div class="glass">
+<span class="logo" role="img" aria-label="Notepad logo"></span>
+<h1 style="font-size:20px;margin-top:12px">Vault published</h1>
+<div class="linkbox" id="doneLink"></div>
+<div class="tier" id="doneFp" style="margin-bottom:10px"></div>
+<p id="doneNote" style="font-size:13px;line-height:1.5;margin-bottom:16px"></p>
+<div class="row"><button class="btn pri" id="btnCopy">Copy link</button><button class="btn" id="btnDl">Download .vault.json</button><button class="btn" id="btnDoneX">Close</button></div></div></div>
+
+<script>
+'use strict';
+/* ===== CONFIG: fill these in for production ===== */
+const CFG = {
+  FIREBASE_URL: '',            // e.g. https://your-app-default-rtdb.firebaseio.com  (empty = local mock cloud)
+  PBKDF2_ITER: 250000, LS_KEY: 'cryptovault_data'
+};
+const $ = s => document.querySelector(s);
+const enc = new TextEncoder(), dec = new TextDecoder();
+const state = { files: [], urlSlug: new URLSearchParams(location.search).get('vault'), source: null, last: null };
+
+/* ===== Buffer utilities ===== */
+function arrayBufferToBase64(buf) {
+  const b = new Uint8Array(buf); let s = '';
+  for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000));
+  return btoa(s);
+}
+function base64ToArrayBuffer(b64) {
+  const s = atob(b64), u = new Uint8Array(s.length);
+  for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i);
+  return u.buffer;
+}
+
+/* ===== Crypto engine ===== */
+async function deriveKey(pw, salt) {
+  const base = await crypto.subtle.importKey('raw', enc.encode(pw), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey({ name: 'PBKDF2', salt, iterations: CFG.PBKDF2_ITER, hash: 'SHA-256' },
+    base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+}
+async function encryptPayload(obj, pw) {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(pw, salt);
+  const ct = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, enc.encode(JSON.stringify(obj)));
+  return { ciphertext: arrayBufferToBase64(ct), iv: arrayBufferToBase64(iv), salt: arrayBufferToBase64(salt), timestamp: Date.now() };
+}
+async function decryptPayload(p, pw) {
+  const key = await deriveKey(pw, new Uint8Array(base64ToArrayBuffer(p.salt)));
+  const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: new Uint8Array(base64ToArrayBuffer(p.iv)) }, key, base64ToArrayBuffer(p.ciphertext));
+  return JSON.parse(dec.decode(pt));
+}
+async function fingerprint(p) {
+  const h = await crypto.subtle.digest('SHA-256', enc.encode(p.ciphertext + p.iv + p.salt));
+  return [...new Uint8Array(h)].slice(0, 12).map(x => x.toString(16).padStart(2, '0')).join('').replace(/(.{4})/g, '$1 ').trim();
+}
+
+/* ===== Cloud layer (Firebase RTDB REST, or local mock) ===== */
+const cloud = {
+  async get(slug) {
+    if (CFG.FIREBASE_URL) { const r = await fetch(`${CFG.FIREBASE_URL}/vaults/${slug}.json`); if (!r.ok) throw new Error('cloud'); return r.json(); }
+    await new Promise(r => setTimeout(r, 250));
+    const v = localStorage.getItem('cv_cloud_' + slug); return v ? JSON.parse(v) : null;
+  },
+  async put(slug, p) {
+    if (CFG.FIREBASE_URL) { const r = await fetch(`${CFG.FIREBASE_URL}/vaults/${slug}.json`, { method: 'PUT', body: JSON.stringify(p) }); if (!r.ok) throw new Error('cloud'); return; }
+    localStorage.setItem('cv_cloud_' + slug, JSON.stringify(p));
+  }
+};
+
+/* ===== UI helpers ===== */
+function toast(msg, type = '') {
+  const t = document.createElement('div'); t.className = 'toast glass ' + type; t.textContent = msg; $('#toasts').appendChild(t);
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 320); }, 4200);
+}
+function show(id) { ['vEmpty', 'vOpen', 'vStudio'].forEach(v => $('#' + v).classList.toggle('hide', v !== id)); }
+const fmtSize = n => n < 1024 ? n + ' B' : n < 1048576 ? (n / 1024).toFixed(1) + ' KB' : (n / 1048576).toFixed(2) + ' MB';
+document.querySelectorAll('[data-eye]').forEach(b => b.addEventListener('click', () => {
+  const i = $('#' + b.dataset.eye); i.type = i.type === 'password' ? 'text' : 'password';
+}));
+
+/* ===== Editor metrics ===== */
+function metrics() {
+  const t = $('#note').value;
+  $('#cW').textContent = (t.trim().match(/\S+/g) || []).length;
+  $('#cC').textContent = t.length;
+  $('#cS').textContent = fmtSize(enc.encode(t).length + state.files.reduce((a, f) => a + f.size, 0));
+}
+$('#note').addEventListener('input', metrics);
+
+/* ===== Files ===== */
+function renderFiles() {
+  const box = $('#files'); box.innerHTML = '';
+  state.files.forEach((f, i) => {
+    const d = document.createElement('div'); d.className = 'file';
+    const ext = (f.name.split('.').pop() || 'file').slice(0, 4).toUpperCase();
+    d.innerHTML = '<span class="ext"></span><span class="nm"></span><span class="sz"></span>';
+    d.children[0].textContent = ext; d.children[1].textContent = f.name; d.children[2].textContent = fmtSize(f.size);
+    const mk = (label, fn) => { const b = document.createElement('button'); b.textContent = label; b.onclick = fn; d.appendChild(b); };
+    if (f.type.startsWith('image/') || f.type.startsWith('text/')) mk('Preview', () => {
+      let pv = d.querySelector('.pv'); if (pv) return pv.remove();
+      pv = document.createElement('div'); pv.className = 'pv';
+      if (f.type.startsWith('image/')) { const im = new Image(); im.src = f.data; pv.appendChild(im); }
+      else { const pre = document.createElement('pre'); pre.textContent = dec.decode(base64ToArrayBuffer(f.data.split(',')[1])); pv.appendChild(pre); }
+      d.appendChild(pv);
+    });
+    mk('Download', () => { const a = document.createElement('a'); a.href = f.data; a.download = f.name; a.click(); });
+    mk('Remove', () => { state.files.splice(i, 1); renderFiles(); metrics(); });
+    box.appendChild(d);
+  });
+}
+function addFiles(list) {
+  [...list].forEach(file => {
+    const r = new FileReader();
+    r.onload = () => { state.files.push({ name: file.name, type: file.type || 'application/octet-stream', size: file.size, data: r.result }); renderFiles(); metrics(); };
+    r.onerror = () => toast('Could not read ' + file.name, 'err');
+    r.readAsDataURL(file);
+  });
+}
+const drop = $('#drop');
+drop.addEventListener('click', () => $('#fileIn').click());
+$('#fileIn').addEventListener('change', e => { addFiles(e.target.files); e.target.value = ''; });
+['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
+drop.addEventListener('drop', e => addFiles(e.dataTransfer.files));
+
+/* ===== Slug collision check ===== */
+let slugTimer, slugOk = false;
+$('#slug').addEventListener('input', () => {
+  const el = $('#slug'), st = $('#slugSt'), v = el.value.trim().toLowerCase(); slugOk = false;
+  clearTimeout(slugTimer); el.className = 'inp'; st.className = 'status'; st.textContent = '';
+  if (!v) return;
+  if (!/^[a-z0-9-]{6,40}$/.test(v)) { st.textContent = 'Use 6-40 lowercase letters, numbers or hyphens.'; return; }
+  st.textContent = 'Checking…';
+  slugTimer = setTimeout(async () => {
+    try {
+      const taken = await cloud.get(v);
+      if ($('#slug').value.trim().toLowerCase() !== v) return;
+      if (taken) { el.className = 'inp bad'; st.className = 'status bad'; st.textContent = '✕ Domain already taken. Please choose another unique handle.'; }
+      else { slugOk = true; el.className = 'inp ok'; st.className = 'status ok'; st.textContent = '✓ Domain available' + (v.length < 12 ? ' (short names are easy to guess)' : ''); }
+    } catch { st.className = 'status bad'; st.textContent = 'Could not reach the cloud store.'; }
+  }, 400);
+});
+
+/* ===== Wipe ===== */
+function wipe() {
+  state.files.forEach(f => { f.data = ''; f.name = ''; }); state.files = []; state.last = null;
+  ['#note', '#slug', '#openSlug'].forEach(s => { $(s).value = ''; });
+  $('#files').innerHTML = ''; $('#slugSt').textContent = ''; $('#slug').className = 'inp'; slugOk = false;
+  metrics(); resetImport(); $('#mDone').classList.add('hide');
+}
+$('#btnFlush').addEventListener('click', () => { wipe(); toast('Memory flushed'); });
+$('#btnDrawer').addEventListener('click', () => $('#layout').classList.toggle('collapsed'));
+$('#btnNew').addEventListener('click', () => { wipe(); show('vStudio'); });
+
+/* ===== Portable payloads ===== */
+const toB64u = o => arrayBufferToBase64(enc.encode(JSON.stringify(o))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const fromB64u = t => { t = t.replace(/-/g, '+').replace(/_/g, '/'); while (t.length % 4) t += '='; return JSON.parse(dec.decode(base64ToArrayBuffer(t))); };
+const validPayload = p => !!p && typeof p.ciphertext === 'string' && typeof p.iv === 'string' && typeof p.salt === 'string';
+const hashPayload = h => { const m = (h || '').match(/[#&]d=([A-Za-z0-9_-]+)/); if (!m) return null; try { const p = fromB64u(m[1]); return validPayload(p) ? p : null; } catch { return null; } };
+function resetImport() { state.pending = null; state.pendingSlug = null; $('#openSlug').disabled = false; $('#importSt').textContent = ''; }
+
+/* ===== Open by domain ===== */
+const normSlug = v => { v = v.trim(); const m = v.match(/[?&]vault=([^&#\s]+)/); if (m) v = decodeURIComponent(m[1]); return v.split('#')[0].toLowerCase(); };
+async function openVault(slug, payload) {
+  const data = await decryptPayload(payload, slug);
+  wipe(); state.urlSlug = slug;
+  $('#note').value = data.note || ''; state.files = data.files || []; renderFiles(); metrics(); show('vStudio');
+}
+async function openByDomain() {
+  const raw = $('#openSlug').value, err = $('#openErr'), btn = $('#btnOpen');
+  const key = state.pending ? state.pendingSlug : normSlug(raw);
+  const direct = state.pending || hashPayload(raw.includes('#') ? raw.slice(raw.indexOf('#')) : '');
+  err.textContent = '';
+  if (!key) { err.textContent = 'Enter your domain name.'; return; }
+  btn.disabled = true; btn.textContent = 'Opening…';
+  let stage = 'cloud';
+  try {
+    const p = direct || await cloud.get(key); stage = 'crypto';
+    if (!p) throw new Error('missing');
+    await openVault(key, p);
+    history.replaceState(null, '', '?vault=' + encodeURIComponent(key));
+  } catch {
+    err.textContent = stage === 'cloud' ? 'Could not reach the cloud store. Check your connection.' : 'Domain not found.';
+  } finally { btn.disabled = false; btn.textContent = 'Open note'; }
+}
+$('#btnOpen').addEventListener('click', openByDomain);
+$('#openSlug').addEventListener('keydown', e => e.key === 'Enter' && openByDomain());
+$('#btnHave').addEventListener('click', () => { $('#openErr').textContent = ''; show('vOpen'); $('#openSlug').focus(); });
+$('#btnOpenBack').addEventListener('click', () => { resetImport(); show('vEmpty'); });
+$('#btnImport').addEventListener('click', () => $('#importIn').click());
+$('#importIn').addEventListener('change', async e => {
+  const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+  try {
+    const p = JSON.parse(await f.text()); if (!validPayload(p) || !/^[a-z0-9-]{6,40}$/.test(p.slug || '')) throw new Error('bad');
+    state.pending = p; state.pendingSlug = p.slug; $('#openSlug').value = ''; $('#openErr').textContent = '';
+    await openByDomain();
+  } catch { resetImport(); $('#openErr').textContent = 'That file is not a valid .vault.json archive.'; }
+});
+
+/* ===== Publish ===== */
+$('#btnPub').addEventListener('click', async () => {
+  const slug = $('#slug').value.trim().toLowerCase();
+  if (!slugOk) return toast('Choose an available custom domain first.', 'err');
+  toast('Encrypting and publishing…');
+  try {
+    if (await cloud.get(slug)) { toast('That domain was just taken. Choose another.', 'err'); return; }
+    const payload = await encryptPayload({ note: $('#note').value, files: state.files }, slug);
+    await cloud.put(slug, payload);
+    const base = `${location.origin}${location.pathname}?vault=${encodeURIComponent(slug)}`, fp = await fingerprint(payload);
+    const portable = CFG.FIREBASE_URL ? null : base + '#d=' + toB64u(payload);
+    const usePortable = !!portable && portable.length <= 100000, link = usePortable ? portable : base;
+    const archive = JSON.stringify({ slug, ...payload }, null, 2);
+    state.last = { link, archive, slug };
+    $('#doneLink').textContent = link.length > 240 ? link.slice(0, 100) + '… (' + link.length.toLocaleString() + ' characters, use Copy)' : link; $('#doneFp').textContent = 'Fingerprint ' + fp;
+    const live = !!CFG.FIREBASE_URL, n = $('#doneNote');
+    n.style.color = (live || usePortable) ? 'var(--mut)' : 'var(--go)';
+    n.textContent = live ? 'Anyone with this domain name can open the note in any browser, on any phone or computer.'
+      : usePortable ? 'This portable link carries your note, so it opens in any browser on any device. Share it only with people you trust.'
+      : 'This vault is too large for a link. Download the .vault.json and open it anywhere with "I already have a domain", then "Or open a .vault.json file". Or set FIREBASE_URL to host it online.';
+    $('#mDone').classList.remove('hide');
+  } catch (e) { toast('Publish failed: ' + (e.message || 'unknown error'), 'err'); }
+});
+$('#btnCopy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(state.last.link); toast('Link copied'); }
+  catch { const r = document.createRange(); r.selectNodeContents($('#doneLink')); getSelection().removeAllRanges(); getSelection().addRange(r); toast('Press Ctrl+C to copy', 'warn'); }
+});
+$('#btnDl').addEventListener('click', () => {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([state.last.archive], { type: 'application/json' }));
+  a.download = state.last.slug + '.vault.json'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+$('#btnDoneX').addEventListener('click', () => $('#mDone').classList.add('hide'));
+
+/* ===== Boot ===== */
+(async function init() {
+  $('#pref').textContent = $('#pref2').textContent = location.host + '/?vault=';
+  if (!window.crypto || !crypto.subtle) { show('vEmpty'); toast('Web Crypto requires HTTPS or localhost.', 'err'); return; }
+  if (state.urlSlug) {
+    const key = state.urlSlug.toLowerCase(); let stage = 'cloud';
+    try {
+      const p = hashPayload(location.hash) || await cloud.get(key); stage = 'crypto';
+      if (p) { await openVault(key, p); return; }
+    } catch { if (stage === 'cloud') toast('Could not reach the cloud store.', 'err'); }
+    state.urlSlug = null; history.replaceState(null, '', location.pathname);
+    if (stage === 'crypto') toast('No note found for that domain.', 'err');
+  }
+  show('vEmpty');
+})();
+</script>
+</body>
+</html>
